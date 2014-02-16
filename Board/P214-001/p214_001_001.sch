@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -9450,6 +9450,7 @@ Source: www.kingbright.com</description>
 <part name="SUPPLY20" library="supply2" deviceset="VCC" device=""/>
 <part name="SUPPLY21" library="supply2" deviceset="GND" device=""/>
 <part name="SV2" library="con-lstb" deviceset="MA05-1" device=""/>
+<part name="C2" library="rcl" deviceset="C-US" device="050-075X075"/>
 </parts>
 <sheets>
 <sheet>
@@ -9500,6 +9501,7 @@ Source: www.kingbright.com</description>
 <instance part="SUPPLY20" gate="G$1" x="119.38" y="96.52"/>
 <instance part="SUPPLY21" gate="GND" x="111.76" y="80.01"/>
 <instance part="SV2" gate="G$1" x="129.54" y="82.55" rot="R180"/>
+<instance part="C2" gate="G$1" x="172.72" y="91.44"/>
 </instances>
 <busses>
 </busses>
@@ -9562,6 +9564,8 @@ Source: www.kingbright.com</description>
 <wire x1="160.02" y1="93.98" x2="165.1" y2="93.98" width="0.1524" layer="91"/>
 <pinref part="C1" gate="G$1" pin="1"/>
 <junction x="165.1" y="93.98"/>
+<pinref part="C2" gate="G$1" pin="1"/>
+<wire x1="165.1" y1="93.98" x2="172.72" y2="93.98" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="SUPPLY16" gate="G$1" pin="VCC"/>
@@ -9615,6 +9619,8 @@ Source: www.kingbright.com</description>
 <wire x1="160.02" y1="86.36" x2="165.1" y2="86.36" width="0.1524" layer="91"/>
 <pinref part="C1" gate="G$1" pin="2"/>
 <junction x="165.1" y="86.36"/>
+<pinref part="C2" gate="G$1" pin="2"/>
+<wire x1="172.72" y1="86.36" x2="165.1" y2="86.36" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="FRONTPORT" gate="1" pin="7"/>
